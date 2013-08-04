@@ -27,7 +27,7 @@ public class LoginIn extends HttpServlet {
 		UnitDao udao = new UnitDao();
 		Unit unit = udao.queryPsdByUsername(username, unittype);
 		if (unit == null) {
-			request.getSession().setAttribute("errorMsg", "该用户不存在或用户组选错");
+			request.getSession().setAttribute("errorMsg", "璇ョ敤鎴峰悕娌℃湁娉ㄥ唽");
 			request.getRequestDispatcher("/Login.jsp")
 			.forward(request, response);
 		} else {
@@ -48,7 +48,7 @@ public class LoginIn extends HttpServlet {
 				}
 			} else {
 				// TODO login losing
-				request.getSession().setAttribute("errorMsg", "密码错误");
+				request.getSession().setAttribute("errorMsg", "瀵嗙爜閿欒");
 				request.getRequestDispatcher("/Login.jsp")
 				.forward(request, response);
 			}

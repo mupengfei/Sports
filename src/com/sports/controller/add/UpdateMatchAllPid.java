@@ -43,7 +43,7 @@ public class UpdateMatchAllPid extends HttpServlet {
 				request.getRequestDispatcher("/referee/SelItem.jsp").forward(
 						request, response);
 			} else {
-				request.getSession().setAttribute("errorMsg", "晋级参赛人员不足");
+				request.getSession().setAttribute("errorMsg", "鎻愪氦澶辫触");
 				request.getRequestDispatcher("/referee/score.jsp").forward(
 						request, response);
 			}

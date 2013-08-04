@@ -32,7 +32,7 @@ public class UpdateMatch extends HttpServlet {
 					response);
 		}else{
 			//TODO losing
-			request.getSession().setAttribute("errorMsg", "排名不得重复");
+			request.getSession().setAttribute("errorMsg", "鍚嶆涓嶈兘閲嶅");
 			request.getRequestDispatcher("/referee/addscore.jsp").forward(request,
 					response);
 		}

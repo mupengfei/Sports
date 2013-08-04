@@ -31,7 +31,7 @@ public class AddUnit extends HttpServlet {
 			request.getRequestDispatcher("Login.jsp").forward(request,
 					response);
 		}else {
-			request.getSession().setAttribute("errorMsg", "用户名重复");
+			request.getSession().setAttribute("errorMsg", "璇ョ敤鎴峰凡娉ㄥ唽");
 			request.getRequestDispatcher("matchs/AddMatchs.jsp")
 			.forward(request, response);
 		}
